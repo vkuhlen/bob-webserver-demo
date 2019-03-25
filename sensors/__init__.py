@@ -27,7 +27,7 @@ if 'sensors' in _config.data.keys():
         )
 
     _bme_config = _config.data['sensors'].get('bme280', {})
-    if _bme_config.get('enabled'), False):
+    if _bme_config.get('enabled', False):
         i2c = I2C(0, I2C.MASTER, pins=(
             _bme_config['pin_sda'],
             _bme_config['pin_scl']
