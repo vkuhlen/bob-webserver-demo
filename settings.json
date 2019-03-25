@@ -1,0 +1,55 @@
+{
+    "networking": {
+    
+        "wlan": {
+            "enabled": true,
+            "mode": "STA",
+            "ssid": "FooBar",
+            "sec": 3,
+            "key": "secret",
+            "timeout": 1000,
+            "ifconfig": "dhcp"
+        },
+        
+        "accesspoint": {
+            "enabled": false,
+            "mode": "AP",
+            "ssid": "fipy-ap",
+            "sec": 3,
+            "key": "",
+            "channel": 4
+        },
+        
+        "lora": {
+        },
+        
+        "lte": {
+        }
+    },
+    
+    "telemetry": {
+        "beep": {
+            "enabled": true,
+            "server": "http://bobserver.informatik.uni-bremen.de",
+            "sensor_key": ""
+        },
+    },
+    "sensors": {
+        "ds1820": {
+            "enabled": true,
+            "pin": "P3"
+        },
+        "hx711": {
+            "enabled": true,
+            "pin_dout": "P9",
+            "pin_pdsck": "P11",
+            "scale": 1,
+            "offset": 1000,
+        },
+        "bme280": {
+            "enabled": true,
+            "pin_sda": "P21",
+            "pin_scl": "P22",
+        }
+    }
+}
