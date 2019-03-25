@@ -49,7 +49,7 @@ The JSON file is structured with sections and subsections e.g.:
 }
 ```
 
-This block could then be read with a `GET` request to `[your_fipy_ip]/api/config/networking/wlan`.
+This block could then be read with a `GET` request to `http://[your_fipy_ip]/api/config/networking/wlan`.
 
 ### Implemented methods
 
@@ -91,9 +91,9 @@ The options method is needed for the [CORS preflight request](https://developer.
 
 Currently three sensors are implemented:
 
-    - DS1820: Temperature
-    - HX711: Weight
-    - BME280: Temperature, Pressure, Humidity (over I2C)
+- DS1820: Temperature
+- HX711: Weight
+- BME280: Temperature, Pressure, Humidity (over I2C)
 
 The pins used are set in the file `settings.json'.
 
