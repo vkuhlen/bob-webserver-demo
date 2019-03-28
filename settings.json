@@ -3,20 +3,18 @@
     
         "wlan": {
             "enabled": true,
-            "mode": "STA",
             "ssid": "FooBar",
-            "sec": 3,
-            "key": "secret",
+            "encryption": 3,
+            "password": "secret",
             "timeout": 1000,
             "ifconfig": "dhcp"
         },
         
         "accesspoint": {
             "enabled": false,
-            "mode": "AP",
             "ssid": "fipy-ap",
-            "sec": 3,
-            "key": "",
+            "encryption": 3,
+            "password": "secret",
             "channel": 4
         },
         
@@ -37,7 +35,15 @@
     "sensors": {
         "ds1820": {
             "enabled": true,
-            "pin": "P3"
+            "pin": "P3",
+            "positions": {
+                "t_i_1": "",
+                "t_i_2": "",
+                "t_i_3": "",
+                "t_i_4": "",
+                "t_i_5": "",
+                "t_i_6": "",
+            }
         },
         "hx711": {
             "enabled": true,
