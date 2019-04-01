@@ -3,7 +3,7 @@ import binascii
 
 from config import Config
 
-_WLAN_SSID = ''
+_WLAN_SSID = 'hiverize'
 _WLAN_PASSWORD = ''
 _WLAN_ENCRYPTION = network.WLAN.WPA2
 
