@@ -33,6 +33,31 @@ import os
 os.mkfs('/flash')
 ```
 
+### How to find the FiPys IP
+
+#### FiPy REPL
+
+If you have access to the REPL you can find the IP with
+```python
+import network
+w = network.WLAN(id=0)
+w.ifconfig()[0]
+```
+
+#### Using `nmap` (Linux only)
+
+First open a console window.
+Find your PCs IP address with
+```
+ip addr | grep 'inet '
+```
+
+Then type
+```
+nmap -sn [YOUR IP ADDRESS]/24
+```
+This will display all devices in your LAN. If one device is called `espressif` it is your FiPy. If there is no such device listed you have to try all IP addresses.
+
 ## Configuration via JSON
 
 The API is based around a single JSON file where the settings for your program are stored.
