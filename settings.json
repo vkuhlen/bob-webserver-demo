@@ -49,8 +49,8 @@
             "enabled": true,
             "pin_dout": "P9",
             "pin_pdsck": "P11",
-            "scale": 1,
-            "offset": 1000,
+            "calibration_factor": 1,
+            "tare_offset": 1000,
         },
         "bme280": {
             "enabled": true,
